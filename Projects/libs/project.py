@@ -90,6 +90,7 @@ class Project:
             for mission_mode in config_dict["missions"].keys():
                 for mission_dict in config_dict["missions"][mission_mode]:
                     mission = Mission(mission_dict["name"], mission_dict["steps"])
+                    mission.adb_path = self.adb_path
                     self.missions[mission_mode].append(mission)
 
             print_message("Success", "[{}] Config information loaded!".format(self.name))

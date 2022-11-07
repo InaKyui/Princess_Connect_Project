@@ -23,7 +23,6 @@ class Mission:
         # Basic information.
         self.name = name
         self.steps = steps
-        self.adb_path = "F:\\LDPlayer\\LDPlayer4.0\\adb.exe"
         # Current result.
         # self.result = None
         # self.error_message = ""
