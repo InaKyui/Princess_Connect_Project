@@ -2,23 +2,24 @@
 #!/usr/bin/pixiv_venv python3.7
 """
 [File]      : project.py
-[Time]      : 2022/10/26 00:11:56
+[Time]      : 2022/10/31 06:18:00
 [Author]    : InaKyui
 [License]   : (C)Copyright 2022, InaKyui
-[Version]   : 1.0
-[Descption] : Descption.
+[Version]   : 1.3
+[Descption] : Class project.
 """
 
 __authors__ = ["InaKyui <https://github.com/InaKyui>"]
-__version__ = "Version: 1.0"
+__version__ = "Version: 1.3"
+
 
 import os
 import sys
 import json
 import time
 
+from libs.common import function_log
 from libs.common import print_message
-
 from libs.mission import Mission
 
 class Project:
