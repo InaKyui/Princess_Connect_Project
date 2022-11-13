@@ -315,7 +315,7 @@ class PrincessConnectRedive(Project):
         if not self.config_ext:
             # Initialization step information.
             step = ["adventure_button", "arena_button", "blank_button", "receive_button",
-                    "blank_button", "first_person", "next_team_button", "next_team_button",
+                    "blank_button", "first_person", "team_button", "team_button",
                     "attack_button", "skip_button", "next_button", "blank_button", "blank_button"]
             mission = Mission(mission_name, step)
             self.missions[mission_mode].append(mission)
@@ -435,7 +435,7 @@ class PrincessConnectRedive(Project):
         start_time = datetime.datetime.now()
         # Run according to the configuration file.
         try:
-            self.__start()
+            # self.__start()
             for mission_mode in self.missions.keys():
                 mission_list = self.missions[mission_mode]
                 # if mission_mode == "random_mission":
